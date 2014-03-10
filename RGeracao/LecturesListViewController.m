@@ -15,6 +15,8 @@
 
 - (void)setData {
     
+    self.searchDisplayController.searchResultsDelegate = self;
+    
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"lectures" ofType:@"json"];
     NSData *lecturesJSONData = [[NSData alloc] initWithContentsOfFile:filePath];
     
@@ -38,6 +40,39 @@
         
 }
 
+#pragma mark - Implementation
+
+- (NSArray *)dataSourceForTableView:(UITableView *)tableView {
+    
+    if (IsSearching)
+        return searchResults;
+    
+    return lectures;
+}
+
+#pragma mark - Search methods
+
+- (void) searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller
+{
+    searchResults = nil;
+}
+
+- (void) searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+    
+    NSMutableArray *temporarySearchArray = [[NSMutableArray alloc] init];
+    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"name contains[cd] %@", searchText]; /* OR time contains[cd] %@ */
+    
+    for (NSDictionary *lecture in [lectures filteredArrayUsingPredicate:resultPredicate])
+        [temporarySearchArray addObject:lecture];
+    
+    searchResults = temporarySearchArray.copy;
+}
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    return YES;
+}
+
 #pragma mark - Table view data source
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -52,7 +87,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return lectures.count;
+    return [self dataSourceForTableView:tableView].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -63,7 +98,7 @@
     if (cell == nil)
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     
-    NSDictionary *lecture = lectures[indexPath.row];
+    NSDictionary *lecture = [self dataSourceForTableView:tableView][indexPath.row];
     
     cell.textLabel.text = lecture[@"name"];
     
