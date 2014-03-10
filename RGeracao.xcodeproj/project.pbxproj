@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DB39C3818ABBC0A00822E1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB39C3718ABBC0A00822E1E /* Foundation.framework */; };
+		3DB39C3A18ABBC0A00822E1E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB39C3918ABBC0A00822E1E /* CoreGraphics.framework */; };
+		3DB39C3C18ABBC0A00822E1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB39C3B18ABBC0A00822E1E /* UIKit.framework */; };
+		3DB39C4218ABBC0A00822E1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DB39C4018ABBC0A00822E1E /* InfoPlist.strings */; };
+		3DB39C4418ABBC0A00822E1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB39C4318ABBC0A00822E1E /* main.m */; };
+		3DB39C4818ABBC0A00822E1E /* RGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB39C4718ABBC0A00822E1E /* RGAppDelegate.m */; };
+		3DB39C4B18ABBC0A00822E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB39C4918ABBC0A00822E1E /* Main.storyboard */; };
+		3DB39C5018ABBC0B00822E1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB39C4F18ABBC0B00822E1E /* Images.xcassets */; };
+		3DB39C5718ABBC0B00822E1E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB39C5618ABBC0B00822E1E /* XCTest.framework */; };
+		3DB39C5818ABBC0B00822E1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB39C3718ABBC0A00822E1E /* Foundation.framework */; };
+		3DB39C5918ABBC0B00822E1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB39C3B18ABBC0A00822E1E /* UIKit.framework */; };
+		3DB39C6118ABBC0B00822E1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DB39C5F18ABBC0B00822E1E /* InfoPlist.strings */; };
+		3DB39C6318ABBC0B00822E1E /* RGeracaoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB39C6218ABBC0B00822E1E /* RGeracaoTests.m */; };
+		3DD07E0C18CD2CD100016CD1 /* LecturesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD07E0B18CD2CD100016CD1 /* LecturesListViewController.m */; };
+		3DD07E1518CD2F0900016CD1 /* LectureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD07E1418CD2F0900016CD1 /* LectureViewController.m */; };
+		3DD07E1718CD342B00016CD1 /* lectures.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DD07E1618CD342B00016CD1 /* lectures.json */; };
+		3DD07E1A18CD36F600016CD1 /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD07E1918CD36F600016CD1 /* FavouritesViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DB39C5A18ABBC0B00822E1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DB39C2C18ABBC0A00822E1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DB39C3318ABBC0A00822E1E;
+			remoteInfo = RGeracao;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DB39C3418ABBC0A00822E1E /* RGeracao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGeracao.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB39C3718ABBC0A00822E1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3DB39C3918ABBC0A00822E1E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3DB39C3B18ABBC0A00822E1E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3DB39C3F18ABBC0A00822E1E /* RGeracao-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RGeracao-Info.plist"; sourceTree = "<group>"; };
+		3DB39C4118ABBC0A00822E1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DB39C4318ABBC0A00822E1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DB39C4518ABBC0A00822E1E /* RGeracao-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RGeracao-Prefix.pch"; sourceTree = "<group>"; };
+		3DB39C4618ABBC0A00822E1E /* RGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGAppDelegate.h; sourceTree = "<group>"; };
+		3DB39C4718ABBC0A00822E1E /* RGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGAppDelegate.m; sourceTree = "<group>"; };
+		3DB39C4A18ABBC0A00822E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DB39C4F18ABBC0B00822E1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3DB39C5518ABBC0B00822E1E /* RGeracaoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGeracaoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB39C5618ABBC0B00822E1E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3DB39C5E18ABBC0B00822E1E /* RGeracaoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RGeracaoTests-Info.plist"; sourceTree = "<group>"; };
+		3DB39C6018ABBC0B00822E1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DB39C6218ABBC0B00822E1E /* RGeracaoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGeracaoTests.m; sourceTree = "<group>"; };
+		3DD07E0A18CD2CD100016CD1 /* LecturesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LecturesListViewController.h; sourceTree = "<group>"; };
+		3DD07E0B18CD2CD100016CD1 /* LecturesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LecturesListViewController.m; sourceTree = "<group>"; };
+		3DD07E1318CD2F0900016CD1 /* LectureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LectureViewController.h; sourceTree = "<group>"; };
+		3DD07E1418CD2F0900016CD1 /* LectureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LectureViewController.m; sourceTree = "<group>"; };
+		3DD07E1618CD342B00016CD1 /* lectures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lectures.json; sourceTree = "<group>"; };
+		3DD07E1818CD36F600016CD1 /* FavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouritesViewController.h; sourceTree = "<group>"; };
+		3DD07E1918CD36F600016CD1 /* FavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouritesViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DB39C3118ABBC0A00822E1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB39C3A18ABBC0A00822E1E /* CoreGraphics.framework in Frameworks */,
+				3DB39C3C18ABBC0A00822E1E /* UIKit.framework in Frameworks */,
+				3DB39C3818ABBC0A00822E1E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB39C5218ABBC0B00822E1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB39C5718ABBC0B00822E1E /* XCTest.framework in Frameworks */,
+				3DB39C5918ABBC0B00822E1E /* UIKit.framework in Frameworks */,
+				3DB39C5818ABBC0B00822E1E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DB39C2B18ABBC0A00822E1E = {
+			isa = PBXGroup;
+			children = (
+				3DB39C3D18ABBC0A00822E1E /* RGeracao */,
+				3DB39C5C18ABBC0B00822E1E /* RGeracaoTests */,
+				3DB39C3618ABBC0A00822E1E /* Frameworks */,
+				3DB39C3518ABBC0A00822E1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DB39C3518ABBC0A00822E1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DB39C3418ABBC0A00822E1E /* RGeracao.app */,
+				3DB39C5518ABBC0B00822E1E /* RGeracaoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DB39C3618ABBC0A00822E1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DB39C3718ABBC0A00822E1E /* Foundation.framework */,
+				3DB39C3918ABBC0A00822E1E /* CoreGraphics.framework */,
+				3DB39C3B18ABBC0A00822E1E /* UIKit.framework */,
+				3DB39C5618ABBC0B00822E1E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DB39C3D18ABBC0A00822E1E /* RGeracao */ = {
+			isa = PBXGroup;
+			children = (
+				3DB39C4618ABBC0A00822E1E /* RGAppDelegate.h */,
+				3DB39C4718ABBC0A00822E1E /* RGAppDelegate.m */,
+				3DB39C4918ABBC0A00822E1E /* Main.storyboard */,
+				3DD07E0A18CD2CD100016CD1 /* LecturesListViewController.h */,
+				3DD07E0B18CD2CD100016CD1 /* LecturesListViewController.m */,
+				3DD07E1318CD2F0900016CD1 /* LectureViewController.h */,
+				3DD07E1418CD2F0900016CD1 /* LectureViewController.m */,
+				3DD07E1818CD36F600016CD1 /* FavouritesViewController.h */,
+				3DD07E1918CD36F600016CD1 /* FavouritesViewController.m */,
+				3DB39C4F18ABBC0B00822E1E /* Images.xcassets */,
+				3DB39C3E18ABBC0A00822E1E /* Supporting Files */,
+			);
+			path = RGeracao;
+			sourceTree = "<group>";
+		};
+		3DB39C3E18ABBC0A00822E1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DD07E1618CD342B00016CD1 /* lectures.json */,
+				3DB39C3F18ABBC0A00822E1E /* RGeracao-Info.plist */,
+				3DB39C4018ABBC0A00822E1E /* InfoPlist.strings */,
+				3DB39C4318ABBC0A00822E1E /* main.m */,
+				3DB39C4518ABBC0A00822E1E /* RGeracao-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DB39C5C18ABBC0B00822E1E /* RGeracaoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DB39C6218ABBC0B00822E1E /* RGeracaoTests.m */,
+				3DB39C5D18ABBC0B00822E1E /* Supporting Files */,
+			);
+			path = RGeracaoTests;
+			sourceTree = "<group>";
+		};
+		3DB39C5D18ABBC0B00822E1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DB39C5E18ABBC0B00822E1E /* RGeracaoTests-Info.plist */,
+				3DB39C5F18ABBC0B00822E1E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DB39C3318ABBC0A00822E1E /* RGeracao */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB39C6618ABBC0B00822E1E /* Build configuration list for PBXNativeTarget "RGeracao" */;
+			buildPhases = (
+				3DB39C3018ABBC0A00822E1E /* Sources */,
+				3DB39C3118ABBC0A00822E1E /* Frameworks */,
+				3DB39C3218ABBC0A00822E1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RGeracao;
+			productName = RGeracao;
+			productReference = 3DB39C3418ABBC0A00822E1E /* RGeracao.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DB39C5418ABBC0B00822E1E /* RGeracaoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB39C6918ABBC0B00822E1E /* Build configuration list for PBXNativeTarget "RGeracaoTests" */;
+			buildPhases = (
+				3DB39C5118ABBC0B00822E1E /* Sources */,
+				3DB39C5218ABBC0B00822E1E /* Frameworks */,
+				3DB39C5318ABBC0B00822E1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DB39C5B18ABBC0B00822E1E /* PBXTargetDependency */,
+			);
+			name = RGeracaoTests;
+			productName = RGeracaoTests;
+			productReference = 3DB39C5518ABBC0B00822E1E /* RGeracaoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DB39C2C18ABBC0A00822E1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RG;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Gabriel Vincent";
+				TargetAttributes = {
+					3DB39C5418ABBC0B00822E1E = {
+						TestTargetID = 3DB39C3318ABBC0A00822E1E;
+					};
+				};
+			};
+			buildConfigurationList = 3DB39C2F18ABBC0A00822E1E /* Build configuration list for PBXProject "RGeracao" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DB39C2B18ABBC0A00822E1E;
+			productRefGroup = 3DB39C3518ABBC0A00822E1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DB39C3318ABBC0A00822E1E /* RGeracao */,
+				3DB39C5418ABBC0B00822E1E /* RGeracaoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DB39C3218ABBC0A00822E1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD07E1718CD342B00016CD1 /* lectures.json in Resources */,
+				3DB39C5018ABBC0B00822E1E /* Images.xcassets in Resources */,
+				3DB39C4218ABBC0A00822E1E /* InfoPlist.strings in Resources */,
+				3DB39C4B18ABBC0A00822E1E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB39C5318ABBC0B00822E1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB39C6118ABBC0B00822E1E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DB39C3018ABBC0A00822E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD07E1A18CD36F600016CD1 /* FavouritesViewController.m in Sources */,
+				3DD07E0C18CD2CD100016CD1 /* LecturesListViewController.m in Sources */,
+				3DD07E1518CD2F0900016CD1 /* LectureViewController.m in Sources */,
+				3DB39C4418ABBC0A00822E1E /* main.m in Sources */,
+				3DB39C4818ABBC0A00822E1E /* RGAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB39C5118ABBC0B00822E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB39C6318ABBC0B00822E1E /* RGeracaoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DB39C5B18ABBC0B00822E1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DB39C3318ABBC0A00822E1E /* RGeracao */;
+			targetProxy = 3DB39C5A18ABBC0B00822E1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DB39C4018ABBC0A00822E1E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB39C4118ABBC0A00822E1E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3DB39C4918ABBC0A00822E1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB39C4A18ABBC0A00822E1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DB39C5F18ABBC0B00822E1E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB39C6018ABBC0B00822E1E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DB39C6418ABBC0B00822E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3DB39C6518ABBC0B00822E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DB39C6718ABBC0B00822E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RGeracao/RGeracao-Prefix.pch";
+				INFOPLIST_FILE = "RGeracao/RGeracao-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3DB39C6818ABBC0B00822E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RGeracao/RGeracao-Prefix.pch";
+				INFOPLIST_FILE = "RGeracao/RGeracao-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3DB39C6A18ABBC0B00822E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RGeracao.app/RGeracao";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RGeracao/RGeracao-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RGeracaoTests/RGeracaoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3DB39C6B18ABBC0B00822E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RGeracao.app/RGeracao";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RGeracao/RGeracao-Prefix.pch";
+				INFOPLIST_FILE = "RGeracaoTests/RGeracaoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DB39C2F18ABBC0A00822E1E /* Build configuration list for PBXProject "RGeracao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB39C6418ABBC0B00822E1E /* Debug */,
+				3DB39C6518ABBC0B00822E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB39C6618ABBC0B00822E1E /* Build configuration list for PBXNativeTarget "RGeracao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB39C6718ABBC0B00822E1E /* Debug */,
+				3DB39C6818ABBC0B00822E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB39C6918ABBC0B00822E1E /* Build configuration list for PBXNativeTarget "RGeracaoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB39C6A18ABBC0B00822E1E /* Debug */,
+				3DB39C6B18ABBC0B00822E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DB39C2C18ABBC0A00822E1E /* Project object */;
+}
